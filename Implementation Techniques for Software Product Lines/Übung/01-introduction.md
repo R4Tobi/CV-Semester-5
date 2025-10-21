@@ -105,18 +105,18 @@
 
 | System            | SPL?      | Begründung |
 |-------------------|-----------|------------|
-| Linux             | ja        | sehr viele varianten, die auf demselben Kernel basieren |
+| Linux             | ja        | sehr viele varianten, die auf demselben Kernel basieren, Produktlinie nur der Kernel (~20k Features), nicht Distributionen |
 | VSCode            | teilweise | Basisprodukt mit Erweiterungen auf sehr vielen Plattformen (Web, Desktop, SAP Build Code), es bleibt aber die gleiche Anwendung |
 | HP Printer Driver | ja        | Gemeinsame Basisoftware für viele Modelle, gerätespezifische Module unterscheiden sich |
-| Microsoft Office  | ja        | Gemeinsame codebasis, gerade in der UI, klassische varianten word/excel/powerpoint
+| Microsoft Office  | ja        | Gemeinsame codebasis, gerade in der UI, klassische varianten word/excel/powerpoint |
 | Spotify           | nein      | gibt verschiedene plattformen, es bleibt aber eine app |
-| Minecraft         | teilweise | varianten java/bedrock/pe, wurden separat entwickelt, daher eher SPL, aber auch nicht wirklich |
+| Minecraft         | teilweise | varianten java/bedrock/pe, wurden separat entwickelt, daher eher SPL, aber auch nicht wirklich. mögliches Argument: Mods-Ökosystem |
 
 ### weitere Beispiele
 
 #### Software Produktlinien
 
-- Android (basiert auf Linux, Xiami, Samsung, Pixel, etc nutzen aber abgewandelte versionen)
+- Android (basiert auf Linux, Xiaomi, Samsung, Pixel, etc nutzen aber abgewandelte versionen)
 - SAP ERP, S/4HANA
 - Adobe Creative Cloud
 
@@ -143,10 +143,10 @@
 
 ```plaintext
 Effort
-│\
-│ \
-│  \
-│   \    ← Produktlinienentwicklung
+│____
+│    |
+│    |
+│    |    ← Produktlinienentwicklung
 │    \__________________________
 │
 │_______________________________→ Anzahl Produkte
@@ -154,8 +154,7 @@ Effort
       Einzelsystem-Entwicklung
 ```
 
-**Beispiel**:
-Beispiel aus der Praxis: HP Druckertreiber
+**Beispiel**: HP Druckertreiber
 
 - Anfangsinvestition: Aufbau einer gemeinsamen Treiberplattform für alle Druckermodelle.
 - Ergebnis: Neue Druckermodelle können durch Konfiguration der vorhandenen Features (Papierformate, Farbdruck, Netzwerkfunktionen) schnell und günstig integriert werden.
@@ -163,6 +162,8 @@ Beispiel aus der Praxis: HP Druckertreiber
   - geringere Entwicklungs- und Testkosten,
   - konsistente Benutzererfahrung über alle Geräte hinweg,
   - schnellere Produktupdates.
+
+## Aufgabe 5 Herausforderungen von SPLs
 
 ### a) Kopierter Quellcode für neue Produktvariante
 
